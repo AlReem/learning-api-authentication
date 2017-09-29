@@ -11,5 +11,5 @@ module.exports = {
   secret: async (req, res, next) => {
     console.log('UsersController.secret() called!!!');
   }
- 
+  
 }
