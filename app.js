@@ -6,7 +6,13 @@ const app = express();
 
 // Middlewares
 app.use( morgan(`dev`) );
-app.use(bodyParser.json());
+app.use( bodyParser.json() );
+
+// This is an ad-hoc middleware to debug
+// app.use( ( req, res, next ) => {
+//   console.log( req );
+//   next();
+// } );
 
 // Routes
 app.use('/users', require('./routes/users'));

@@ -4,7 +4,7 @@
   "description": "https://www.youtube.com/watch?v=zx6jnaLuB9Q",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "nodemon app.js"
   },
   "author": "abuzayd",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.0",
     "express-promise-router": "^2.0.0",
+    "joi": "^11.1.1",
     "morgan": "^1.9.0"
   }
 }
