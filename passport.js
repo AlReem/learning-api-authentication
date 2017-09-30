@@ -49,9 +49,12 @@ passport.use(new LocalStrategy({
     }
 
     // If exists, check if password is correct
-
+    const isMatch = await user.isValidPassword( password );
 
     // If password incorrect, handle it
+    if (!isMatch) {
+      return done( null, false );
+    }
 
     // If all ok, return user
     done( null, user );
